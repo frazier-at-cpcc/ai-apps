@@ -3,74 +3,208 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AI Course Evaluation Survey</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <title>AI Course Evaluation Survey</title>
 </head>
-<body class="bg-gray-100 p-6">
-    <div class="max-w-3xl mx-auto bg-white rounded-lg shadow-md p-8">
-        <h1 class="text-3xl font-bold mb-6 text-center text-blue-600">AI Course Evaluation Survey</h1>
-        <p class="mb-6 text-gray-700">Dear Student, thank you for participating in our AI course. Your feedback is invaluable in helping us improve the course for future students. Please take a few minutes to complete this survey. Your responses will be anonymous and confidential.</p>
-        
-        <form>
-            <div class="mb-8">
-                <h2 class="text-2xl font-semibold mb-4 text-gray-800">Course Content and Structure</h2>
-                <p class="mb-4 text-sm text-gray-600">For questions 1-15, please rate your agreement with each statement on a scale of 1 to 5:<br>
-                1 = Strongly Disagree, 2 = Disagree, 3 = Neutral, 4 = Agree, 5 = Strongly Agree</p>
-                
-                <div class="grid gap-4">
-                    <div>
-                        <label class="block mb-2 text-gray-700">1. The course objectives were clearly communicated.</label>
-                        <div class="flex justify-between">
-                            <span class="text-sm text-gray-600">Strongly Disagree</span>
-                            <div>
-                                <input type="radio" name="q1" value="1" class="mr-1"><label class="mr-4">1</label>
-                                <input type="radio" name="q1" value="2" class="mr-1"><label class="mr-4">2</label>
-                                <input type="radio" name="q1" value="3" class="mr-1"><label class="mr-4">3</label>
-                                <input type="radio" name="q1" value="4" class="mr-1"><label class="mr-4">4</label>
-                                <input type="radio" name="q1" value="5" class="mr-1"><label>5</label>
-                            </div>
-                            <span class="text-sm text-gray-600">Strongly Agree</span>
-                        </div>
-                    </div>
-                    
-                    <!-- Repeat similar structure for questions 2-15 -->
-                    
-                </div>
-            </div>
+<body class="bg-gray-100 font-sans antialiased">
+    <div class="max-w-4xl mx-auto py-10 px-5 sm:px-10 bg-white shadow-md rounded-lg">
+        <h1 class="text-3xl font-bold mb-6 text-gray-800">AI Course Evaluation Survey</h1>
+        <p class="mb-8 text-gray-700">Dear Student,<br><br>
+        Thank you for participating in our AI course. Your feedback is invaluable in helping us improve the course for future students. Please take a few minutes to complete this survey. Your responses will be anonymous and confidential.</p>
 
-            <div class="mb-8">
-                <h2 class="text-2xl font-semibold mb-4 text-gray-800">Open-ended Questions</h2>
-                
-                <div class="mb-4">
-                    <label class="block mb-2 text-gray-700">16. What aspects of the course did you find most valuable?</label>
-                    <textarea class="w-full p-2 border rounded" rows="4"></textarea>
-                </div>
-                
-                <div class="mb-4">
-                    <label class="block mb-2 text-gray-700">17. What areas of the course do you think need improvement?</label>
-                    <textarea class="w-full p-2 border rounded" rows="4"></textarea>
-                </div>
-                
-                <div class="mb-4">
-                    <label class="block mb-2 text-gray-700">18. Were there any AI topics not covered in the course that you would have liked to learn about?</label>
-                    <textarea class="w-full p-2 border rounded" rows="4"></textarea>
-                </div>
-                
-                <div class="mb-4">
-                    <label class="block mb-2 text-gray-700">19. How do you plan to apply what you've learned in this course to your academic or professional goals?</label>
-                    <textarea class="w-full p-2 border rounded" rows="4"></textarea>
-                </div>
-                
-                <div class="mb-4">
-                    <label class="block mb-2 text-gray-700">20. Do you have any additional comments or suggestions for improving the course?</label>
-                    <textarea class="w-full p-2 border rounded" rows="4"></textarea>
-                </div>
-            </div>
+        <h2 class="text-2xl font-semibold mb-4 text-gray-800">Course Content and Structure</h2>
+        <div class="space-y-4 mb-6">
+            <label class="block">
+                <span class="text-gray-700">1. The course objectives were clearly communicated.</span>
+                <select class="mt-2 block w-full p-2 border border-gray-300 rounded-md">
+                    <option value="">1 - Strongly Disagree</option>
+                    <option value="">2 - Disagree</option>
+                    <option value="">3 - Neutral</option>
+                    <option value="">4 - Agree</option>
+                    <option value="">5 - Strongly Agree</option>
+                </select>
+            </label>
+            <label class="block">
+                <span class="text-gray-700">2. The course content was well-organized and easy to follow.</span>
+                <select class="mt-2 block w-full p-2 border border-gray-300 rounded-md">
+                    <option value="">1 - Strongly Disagree</option>
+                    <option value="">2 - Disagree</option>
+                    <option value="">3 - Neutral</option>
+                    <option value="">4 - Agree</option>
+                    <option value="">5 - Strongly Agree</option>
+                </select>
+            </label>
+            <label class="block">
+                <span class="text-gray-700">3. The modules covered relevant and up-to-date information about AI.</span>
+                <select class="mt-2 block w-full p-2 border border-gray-300 rounded-md">
+                    <option value="">1 - Strongly Disagree</option>
+                    <option value="">2 - Disagree</option>
+                    <option value="">3 - Neutral</option>
+                    <option value="">4 - Agree</option>
+                    <option value="">5 - Strongly Agree</option>
+                </select>
+            </label>
+            <label class="block">
+                <span class="text-gray-700">4. The pace of the course was appropriate for the material covered.</span>
+                <select class="mt-2 block w-full p-2 border border-gray-300 rounded-md">
+                    <option value="">1 - Strongly Disagree</option>
+                    <option value="">2 - Disagree</option>
+                    <option value="">3 - Neutral</option>
+                    <option value="">4 - Agree</option>
+                    <option value="">5 - Strongly Agree</option>
+                </select>
+            </label>
+            <label class="block">
+                <span class="text-gray-700">5. The balance between theoretical concepts and practical applications was appropriate.</span>
+                <select class="mt-2 block w-full p-2 border border-gray-300 rounded-md">
+                    <option value="">1 - Strongly Disagree</option>
+                    <option value="">2 - Disagree</option>
+                    <option value="">3 - Neutral</option>
+                    <option value="">4 - Agree</option>
+                    <option value="">5 - Strongly Agree</option>
+                </select>
+            </label>
+        </div>
 
-            <div class="text-center">
-                <button type="submit" class="bg-blue-500 text-white px-6 py-2 rounded hover:bg-blue-600 transition duration-300">Submit Survey</button>
-            </div>
-        </form>
+        <h2 class="text-2xl font-semibold mb-4 text-gray-800">Learning Resources and Activities</h2>
+        <div class="space-y-4 mb-6">
+            <label class="block">
+                <span class="text-gray-700">6. The external resources (digital lessons, articles, videos) were helpful and informative.</span>
+                <select class="mt-2 block w-full p-2 border border-gray-300 rounded-md">
+                    <option value="">1 - Strongly Disagree</option>
+                    <option value="">2 - Disagree</option>
+                    <option value="">3 - Neutral</option>
+                    <option value="">4 - Agree</option>
+                    <option value="">5 - Strongly Agree</option>
+                </select>
+            </label>
+            <label class="block">
+                <span class="text-gray-700">7. The hands-on activities (e.g., Google Colab, chatbot creation) enhanced my understanding of AI concepts.</span>
+                <select class="mt-2 block w-full p-2 border border-gray-300 rounded-md">
+                    <option value="">1 - Strongly Disagree</option>
+                    <option value="">2 - Disagree</option>
+                    <option value="">3 - Neutral</option>
+                    <option value="">4 - Agree</option>
+                    <option value="">5 - Strongly Agree</option>
+                </select>
+            </label>
+            <label class="block">
+                <span class="text-gray-700">8. The discussion forums facilitated meaningful exchanges with peers.</span>
+                <select class="mt-2 block w-full p-2 border border-gray-300 rounded-md">
+                    <option value="">1 - Strongly Disagree</option>
+                    <option value="">2 - Disagree</option>
+                    <option value="">3 - Neutral</option>
+                    <option value="">4 - Agree</option>
+                    <option value="">5 - Strongly Agree</option>
+                </select>
+            </label>
+            <label class="block">
+                <span class="text-gray-700">9. The assignments and projects were challenging and helped reinforce my learning.</span>
+                <select class="mt-2 block w-full p-2 border border-gray-300 rounded-md">
+                    <option value="">1 - Strongly Disagree</option>
+                    <option value="">2 - Disagree</option>
+                    <option value="">3 - Neutral</option>
+                    <option value="">4 - Agree</option>
+                    <option value="">5 - Strongly Agree</option>
+                </select>
+            </label>
+            <label class="block">
+                <span class="text-gray-700">10. The quizzes effectively assessed my understanding of the course material.</span>
+                <select class="mt-2 block w-full p-2 border border-gray-300 rounded-md">
+                    <option value="">1 - Strongly Disagree</option>
+                    <option value="">2 - Disagree</option>
+                    <option value="">3 - Neutral</option>
+                    <option value="">4 - Agree</option>
+                    <option value="">5 - Strongly Agree</option>
+                </select>
+            </label>
+        </div>
+
+        <h2 class="text-2xl font-semibold mb-4 text-gray-800">Instructor and Support</h2>
+        <div class="space-y-4 mb-6">
+            <label class="block">
+                <span class="text-gray-700">11. The instructor was knowledgeable about the subject matter.</span>
+                <select class="mt-2 block w-full p-2 border border-gray-300 rounded-md">
+                    <option value="">1 - Strongly Disagree</option>
+                    <option value="">2 - Disagree</option>
+                    <option value="">3 - Neutral</option>
+                    <option value="">4 - Agree</option>
+                    <option value="">5 - Strongly Agree</option>
+                </select>
+            </label>
+            <label class="block">
+                <span class="text-gray-700">12. The instructor was responsive to questions and provided helpful feedback.</span>
+                <select class="mt-2 block w-full p-2 border border-gray-300 rounded-md">
+                    <option value="">1 - Strongly Disagree</option>
+                    <option value="">2 - Disagree</option>
+                    <option value="">3 - Neutral</option>
+                    <option value="">4 - Agree</option>
+                    <option value="">5 - Strongly Agree</option>
+                </select>
+            </label>
+            <label class="block">
+                <span class="text-gray-700">13. Technical support was available when needed.</span>
+                <select class="mt-2 block w-full p-2 border border-gray-300 rounded-md">
+                    <option value="">1 - Strongly Disagree</option>
+                    <option value="">2 - Disagree</option>
+                    <option value="">3 - Neutral</option>
+                    <option value="">4 - Agree</option>
+                    <option value="">5 - Strongly Agree</option>
+                </select>
+            </label>
+        </div>
+
+        <h2 class="text-2xl font-semibold mb-4 text-gray-800">Overall Experience</h2>
+        <div class="space-y-4 mb-6">
+            <label class="block">
+                <span class="text-gray-700">14. This course improved my understanding of AI and its applications.</span>
+                <select class="mt-2 block w-full p-2 border border-gray-300 rounded-md">
+                    <option value="">1 - Strongly Disagree</option>
+                    <option value="">2 - Disagree</option>
+                    <option value="">3 - Neutral</option>
+                    <option value="">4 - Agree</option>
+                    <option value="">5 - Strongly Agree</option>
+                </select>
+            </label>
+            <label class="block">
+                <span class="text-gray-700">15. I feel more prepared to pursue AI-related opportunities after taking this course.</span>
+                <select class="mt-2 block w-full p-2 border border-gray-300 rounded-md">
+                    <option value="">1 - Strongly Disagree</option>
+                    <option value="">2 - Disagree</option>
+                    <option value="">3 - Neutral</option>
+                    <option value="">4 - Agree</option>
+                    <option value="">5 - Strongly Agree</option>
+                </select>
+            </label>
+        </div>
+
+        <h2 class="text-2xl font-semibold mb-4 text-gray-800">Open-ended Questions</h2>
+        <div class="space-y-4">
+            <label class="block">
+                <span class="text-gray-700">16. What aspects of the course did you find most valuable?</span>
+                <textarea class="mt-2 block w-full p-3 border border-gray-300 rounded-md" rows="4"></textarea>
+            </label>
+            <label class="block">
+                <span class="text-gray-700">17. What areas of the course do you think need improvement?</span>
+                <textarea class="mt-2 block w-full p-3 border border-gray-300 rounded-md" rows="4"></textarea>
+            </label>
+            <label class="block">
+                <span class="text-gray-700">18. Were there any AI topics not covered in the course that you would have liked to learn about?</span>
+                <textarea class="mt-2 block w-full p-3 border border-gray-300 rounded-md" rows="4"></textarea>
+            </label>
+            <label class="block">
+                <span class="text-gray-700">19. How do you plan to apply what you've learned in this course to your academic or professional goals?</span>
+                <textarea class="mt-2 block w-full p-3 border border-gray-300 rounded-md" rows="4"></textarea>
+            </label>
+            <label class="block">
+                <span class="text-gray-700">20. Do you have any additional comments or suggestions for improving the course?</span>
+                <textarea class="mt-2 block w-full p-3 border border-gray-300 rounded-md" rows="4"></textarea>
+            </label>
+        </div>
+
+        <div class="mt-8">
+            <button class="bg-blue-600 text-white px-6 py-3 rounded-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-opacity-50">Submit Survey</button>
+        </div>
     </div>
 </body>
 </html>
